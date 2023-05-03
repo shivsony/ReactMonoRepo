@@ -7,19 +7,15 @@ import App from './app';
 describe('App', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <App />
     );
     expect(baseElement).toBeTruthy();
   });
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <App />
     );
-    expect(getByText(/Welcome newapp/gi)).toBeTruthy();
+    expect(getByText(/This is the main/gi)).toBeTruthy();
   });
 });

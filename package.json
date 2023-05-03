@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "start": "nx serve newapp",
     "start-newapp": "nx serve newapp",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test newapp"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +33,7 @@
     "@nrwl/react": "15.9.2",
     "@nrwl/vite": "15.9.2",
     "@nrwl/workspace": "15.9.2",
+    "@nx/jest": "^16.0.3",
     "@testing-library/react": "14.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "18.14.2",
